@@ -30,7 +30,7 @@ const FILTER_OPTIONS = [
 
 //sort options
 const SORT_OPTIONS = [
-    "latest",
+    "Latest",
     "Oldest",
     "Highest Amount",
     "Lowest Amount",

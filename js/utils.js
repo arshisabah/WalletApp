@@ -12,7 +12,7 @@ const getCurrentDate = () => {
 
 //currency formater
 const formatCurrency = amount => {
-    return `$${Number(amount).toLocaleString("en-IN")}`;
+    return `₹${Number(amount).toLocaleString("en-IN")}`;
 };
 
 //capitalize

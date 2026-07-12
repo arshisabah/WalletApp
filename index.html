@@ -28,17 +28,11 @@
 
         <nav class="navbar">
           <ul>
-            <li>
-              <a href="#">Dashboard</a>
-            </li>
+            <li><a href="#">Dashboard</a></li>
 
-            <li>
-              <a href="#">Transactions</a>
-            </li>
+            <li><a href="#">Transactions</a></li>
 
-            <li>
-              <a href="#">Profile</a>
-            </li>
+            <li><a href="#">Profile</a></li>
           </ul>
         </nav>
       </div>
@@ -47,7 +41,7 @@
     <!-- ================= MAIN ================= -->
 
     <main class="container">
-      <!-- Dashboard Cards -->
+      <!-- Dashboard -->
 
       <section class="dashboard">
         <article class="card">
@@ -75,7 +69,7 @@
         </article>
       </section>
 
-      <!-- Forms -->
+      <!-- ================= Forms ================= -->
 
       <section class="actions">
         <!-- Add Money -->
@@ -96,7 +90,7 @@
               />
             </div>
 
-            <button type="submit">
+            <button id="addMoneyBtn" type="submit">
               <i class="fa-solid fa-plus"></i>
 
               Add Money
@@ -116,7 +110,7 @@
               <input
                 type="text"
                 id="receiver"
-                placeholder="Enter Receiver Name"
+                placeholder="Receiver Name"
                 required
               />
             </div>
@@ -136,14 +130,10 @@
             <div class="form-group">
               <label for="purpose"> Purpose </label>
 
-              <select id="purpose" required>
-                <option value="">Select Purpose</option>
-
-                <!-- Dynamic Options -->
-              </select>
+              <select id="purpose" required></select>
             </div>
 
-            <button type="submit">
+            <button id="sendMoneyBtn" type="submit">
               <i class="fa-solid fa-paper-plane"></i>
 
               Send Money
@@ -152,11 +142,11 @@
         </article>
       </section>
 
-      <!-- Search & Filter -->
+      <!-- ================= Controls ================= -->
 
       <section class="controls">
         <div class="search-box">
-          <label for="search"> Search Transaction </label>
+          <label for="search"> Search </label>
 
           <input type="text" id="search" placeholder="Search by Receiver" />
         </div>
@@ -164,29 +154,17 @@
         <div class="filter-box">
           <label for="filter"> Filter </label>
 
-          <select id="filter">
-            <option value="all">All Transactions</option>
-
-            <!-- Dynamic Options -->
-          </select>
+          <select id="filter"></select>
         </div>
 
         <div class="sort-box">
           <label for="sort"> Sort By </label>
 
-          <select id="sort">
-            <option value="latest">Latest</option>
-
-            <option value="oldest">Oldest</option>
-
-            <option value="high">Highest Amount</option>
-
-            <option value="low">Lowest Amount</option>
-          </select>
+          <select id="sort"></select>
         </div>
       </section>
 
-      <!-- Transaction History -->
+      <!-- ================= History ================= -->
 
       <section class="history">
         <div class="table-header">
@@ -212,16 +190,12 @@
             </tr>
           </thead>
 
-          <tbody id="transactionBody">
-            <!-- Dynamic Transactions -->
-          </tbody>
+          <tbody id="transactionBody"></tbody>
         </table>
-
-        <div id="emptyState">No Transactions Found</div>
       </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ================= Footer ================= -->
 
     <footer class="footer">
       <p>
@@ -233,12 +207,12 @@
       </p>
     </footer>
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- ================= JavaScript ================= -->
 
     <script src="./js/constants.js"></script>
     <script src="./js/utils.js"></script>
-    <script src="./js/storage.js"></script>
     <script src="./js/validation.js"></script>
+    <script src="./js/storage.js"></script>
     <script src="./js/ui.js"></script>
     <script src="./js/app.js"></script>
   </body>
